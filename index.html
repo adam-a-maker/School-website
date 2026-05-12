@@ -10,7 +10,10 @@
 
 <body>
 
-    <img class='logo' src='RAFALE_DIGI_R.webp' width='19%' height='auto'>
+    <!-- https://blogavecblogger.blogspot.com/2021/02/creer-des-images-cliquables.html -->
+    <a class="logo" href="index.html">
+        <img class="logo-img" src='RAFALE_DIGI_R.webp'>
+    </a>
 
     <!-- camera-controls -->
     <!-- https://modelviewer.dev/examples/stagingandcameras/#cameraOrbit-->
@@ -18,6 +21,7 @@
     <!-- 3d model by bohmerang on skechfab-->
     <!-- les orbites sont définies avec X, Y, Distance par rapport au centre du model-->
     <model-viewer
+        class="Rafale1"
         id="Rafale1"
         src="Dassault-Rafale.glb"
         interpolation-decay="100"
