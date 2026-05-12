@@ -1,89 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <link rel="icon" href="Rafale.png">
+    <link rel="stylesheet" href="style.css">
+    <title>RAFALE F4</title>
+</head>
 
-    <head>
-        <title>RAFALE F4</title>
-        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-        <link rel="icon" href="Rafale.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel='img' src='white-rafale.png'>
-    </head>
+<body>
 
-    <body>
+    <img class='logo' src='RAFALE_DIGI_R.webp' width='19%' height='auto'>
 
-        <!-- camera-controls -->
-        <!-- https://modelviewer.dev/examples/stagingandcameras/#cameraOrbit-->
-        <!-- auto-rotate -->
-        <!-- camera-orbit="-33deg 80deg 2m"-->
-         <model-viewer
-            id="Rafale1"
-            src="Dassault-Rafale.glb"
-            interpolation-decay="100"
-        > </model-viewer>
+    <!-- camera-controls -->
+    <!-- https://modelviewer.dev/examples/stagingandcameras/#cameraOrbit-->
+    <!-- auto-rotate -->
+    <!-- 3d model by bohmerang on skechfab-->
+    <!-- les orbites sont définies avec X, Y, Distance par rapport au centre du model-->
+    <model-viewer
+        id="Rafale1"
+        src="Dassault-Rafale.glb"
+        interpolation-decay="100"
+    ></model-viewer>
 
-        <script>
-            (() => {
-            const modelViewer = document.querySelector('#Rafale1');
-            const orbitCycle = [
-                '-33deg 80deg 2m',
-                modelViewer.cameraOrbit,
-                '60deg 70deg 4m',
-                '3deg 100deg 1m'
-            ];
+    <script>
+        (() => {
+        const modelViewer = document.querySelector('#Rafale1');
+        const orbitCycle = [
+            '-33deg 80deg 2m',
+            modelViewer.cameraOrbit,
+            '60deg 70deg 4m',
+            '3deg 100deg 1m'
+        ];
 
-            setInterval(() => {
-                const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
-                modelViewer.cameraOrbit =
-                    orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
-            }, 2000);
-            })();
-        </script>
+        setInterval(() => {
+            const currentOrbitIndex = orbitCycle.indexOf(modelViewer.cameraOrbit);
+            modelViewer.cameraOrbit =
+                orbitCycle[(currentOrbitIndex + 1) % orbitCycle.length];
+        }, 2000);
+        })();
+    </script>
 
-         <h1>RAFALE F4</h1>    
+    <h1 class="title">RAFALE F4</h1>    
+   
 
-        <p><b>Mercedes Grand Prix</b> (engagée en Formule 1 sous la dénomination commerciale <br><b>Mercedes-AMG Petronas Formula One Team</b> depuis 2020) est une écurie allemande de Formule 1, appartenant au constructeur automobile allemand Mercedes-Benz qui a débuté en Formule 1 en tant que constructeur en 1954 </p>
-        <p> 
-            <ul>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
-                <li><b>7</b> titres consécutifs de champion du monde des pilotes (de 2014 à 2020)<br></li>
-                <li><b>8</b> titres consécutifs de champion du monde des constructeurs (de 2014 à 2021)<br></li>
-                <li><b>20</b> pole positions dans une saison (2016)</li>
 
-            </ul>
-        </p>    
-        <script src="script.js"></script>
-    </body>
-
+    <nav class="site-nav" aria-label="Navigation principale">
+    <a class="nav-link current" href="index.html" aria-current="page">Accueil</a>
+    <a class="nav-link" href="page1.html">Biographie</a>
+    </nav>
+</body>
 </html> 

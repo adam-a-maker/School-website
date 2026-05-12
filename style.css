@@ -10,14 +10,11 @@
 }
 
 body {
-    background: #060C14;
-    /* background: -moz-linear-gradient(top, #41ECD8 0%, #1FB0BE 44%, #0C2D29 100%);
-    background: -webkit-linear-gradient(top, #41ECD8 0%, #1FB0BE 44%, #0C2D29 100%);
-    background: linear-gradient(to bottom, #41ECD8 0%, #1FB0BE 44%, #0C2D29 100%); */
+    background: #050505; /*#050505    #060C14*/
 }
 
-h1 {
-    color: #33ff00;
+.title {
+    color: #33ff00 ;
     text-align: center;
     font-size: 70px;
     font-family: myFont;
@@ -37,7 +34,20 @@ h1 {
     align-items: center;
 }
 
+/* dvh signifie dynamic viewport height 
+   (ex : taille % - bouton) 
+   https://believemy.com/fr/r/tout-comprendre-sur-les-unitees-lvh-svh-et-dvh-avec-css
+*/
 model-viewer {
     height: 70dvh;
     width: 100%;
+}
+
+.nav-link {
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  color: #16324f;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
 }
