@@ -32,9 +32,9 @@ body {
 
 .Rafale2 {
     width: 100%;
-    height: 70dvh;
+    height: 100dvh;
     position: sticky;
-    top: 10dvh;
+    top: 0dvh;
 }
 
 .nav-link {
@@ -56,4 +56,14 @@ body {
     height: auto;
     position: fixed;
     top: 0;
+}
+
+.caracteristics {
+    color: #33ff00;
+    font-size: 30px;
+    text-align: center;
+    /* border-left : 2px solid #33ff00;
+    border-right : 2px solid #33ff00; */
+     outline: 3px inset #33ff00;
+
 }
