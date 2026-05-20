@@ -67,12 +67,15 @@ body {
     border-radius: 2%;
 }
 
+/* https://www.w3schools.com/css/css_padding.asp */
+/* https://www.w3schools.com/css/css_margin.asp */
 .caracteristics {
     color: #33ff00;
     font-size: 30px;
     text-align: center;
-    outline: 3px inset #33ff00;
-
+    outline: 3px solid #33ff00;
+    padding: 0.3% 0.3% 0.3% 0.3%;
+    margin-top: 50%;
 }
 
 /* https://stackoverflow.com/questions/2789703/remove-blue-underline-from-link */
