@@ -44,6 +44,10 @@ body {
     top: 0dvh;
 }
 
+.stop-scroll {
+    height: 2800px;
+}
+
 .nav-link {
     position: relative;
     bottom: 7dvh;
@@ -109,13 +113,7 @@ body {
 /*code yaceen*/
 
 .conteneur-video {
-    text-align: center;
-    height: 50%;
-    width: auto;
-}
-
-video {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
