@@ -103,3 +103,19 @@ body {
     text-align: center;
     margin-top: 3%;
 }
+
+
+
+/*code yaceen*/
+
+.conteneur-video {
+    text-align: center;
+    height: 50%;
+    width: auto;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
