@@ -121,3 +121,15 @@ body {
 .list-user{
     text-align: center;
 }
+
+.footer{
+    background: #050505;
+    margin: 10% auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer-list{
+    display: inline-block;
+    text-align: left;
+}
