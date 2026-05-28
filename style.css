@@ -133,3 +133,8 @@ body {
     display: inline-block;
     text-align: left;
 }
+
+.rafale-user{
+    width: 60%;
+    height: auto;
+}
